@@ -1,0 +1,59 @@
+/* CSS declarations go here */
+body {
+	margin: 0;
+	padding: 0;
+	background: #FBFFF9;
+	font: 11px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	color: #555;
+	text-align: center;
+}
+
+form {
+	width: 296px;
+	height: 316px;
+	margin: 0px;
+	padding: 0;
+	background: #FFEF4D url(sticky.gif) no-repeat;
+	text-align: center;
+	-moz-box-shadow:    0px 3px 6px -1px #E0E3DD;
+	-webkit-box-shadow: 0px 3px 6px -1px #E0E3DD;
+	box-shadow:         0px 3px 6px -1px #E0E3DD;
+}
+
+textarea, .insert {
+	width: 250px;
+	height: 108px;
+	margin: 90px 23px 50px;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	background: transparent;
+	font: bold 28px Helvetica, Arial, Verdana, sans-serif;
+	font: italic 28px Georgia, Times, serif;
+	line-height: 36px;
+	letter-spacing: -1px;
+	text-align: center;
+	outline-style: none;
+	resize: none;
+	white-space: pre;
+}
+
+.stickies {
+	margin: 140px auto 80px;
+	overflow: hidden;
+	width: 910px;
+}
+.sticky, .insert {
+	float: left;
+	margin: 0px 5px 5px 0px;
+}
+
+.insert {
+	border: 3px dotted #EAEFF3;
+	width: 244px;
+	height: 108px;
+	overflow: hidden;
+	padding: 90px 23px 112px;
+	border-radius: 20px;
+	cursor: pointer;
+}

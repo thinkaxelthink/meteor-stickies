@@ -1,0 +1,27 @@
+<head>
+  <title>Stickies</title>
+</head>
+
+<body>
+	  {{> stickies}}
+</body>
+
+<template name="stickies">
+	<div class="stickies">
+		{{#each createNotes}}
+			{{> sticky}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="sticky">
+	{{#if isNote this.type }}
+	<div class="sticky">
+		<form id="sticky-{{_id}}" accept-charset="utf-8" name="sticky">
+			<textarea name="note">{{text}}</textarea>
+		</form>
+	</div>
+	{{else}}
+	<div class="insert">Add a note...</div>
+	{{/if}}
+</template>
