@@ -12,8 +12,10 @@
 
 <template name="authorInfo">
 	<form id="author-info" name="authorname">
-		<label class="nice-label" for="username">Who are you?</label>
-		<input type="text" name="username" class="nice-text" />
+		<div>
+			<label class="nice-label" for="username">Who are you?</label>
+			<input type="text" name="username" class="nice-text" />
+		</div>
 	</form>
 </template>
 
@@ -37,12 +39,14 @@
 	{{else}}
 	<div class="insert">
 		<p>Add a note...</p>
+		<!-- COMING SOON: colors
 		<ul>
 			<li class="yellow"></li>
 			<li class="purple"></li>
 			<li class="green"></li>
 			<li class="pink"></li>
-		</ul>
+		</ul> 
+		-->
 	</div>
 	{{/if}}
 </template>

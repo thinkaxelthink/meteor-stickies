@@ -24,7 +24,7 @@ h2{font: italic 28px Georgia, Times, serif;}
 	height: 316px;
 	margin: 0px;
 	padding: 0;
-	background: #FFEF4D url(sticky.gif) no-repeat;
+	background: #FFEF4D no-repeat;
 	text-align: center;
 	-moz-box-shadow:    0px 3px 6px -1px #E0E3DD;
 	-webkit-box-shadow: 0px 3px 6px -1px #E0E3DD;
@@ -76,10 +76,10 @@ textarea, .insert {
 	border: 1px solid #D2D2D2;
 	margin: 0px 10px 0 0;
 }
-	.yellow { background: #FFEF4D url(sticky.gif) no-repeat; }
-	.purple { background: #D065FA url(sticky.gif) no-repeat; }
-	.pink { background: #FF83DC url(sticky.gif) no-repeat; }
-	.green { background: #CF6 url(sticky.gif) no-repeat; }
+	.yellow { background: #FFEF4D no-repeat; }
+	.purple { background: #D065FA no-repeat; }
+	.pink { background: #FF83DC no-repeat; }
+	.green { background: #CF6 no-repeat; }
 
 .sticky span {
 	font: italic 12px Georgia, Times, serif;
@@ -92,8 +92,7 @@ textarea, .insert {
 }
 
 #author-info .nice-label {
-	left: 595px;
-	top: 106px;
+	margin: 4px 0px 0px 5px;
 	color: #D2D2D2;
 }
 
