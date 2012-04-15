@@ -67,6 +67,20 @@ textarea, .insert {
 	cursor: pointer;
 	white-space: normal;
 }
+
+.insert ul li {
+	float:left;
+	list-style-type: none;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #D2D2D2;
+	margin: 0px 10px 0 0;
+}
+	.yellow { background: #FFEF4D url(sticky.gif) no-repeat; }
+	.purple { background: #D065FA url(sticky.gif) no-repeat; }
+	.pink { background: #FF83DC url(sticky.gif) no-repeat; }
+	.green { background: #CF6 url(sticky.gif) no-repeat; }
+
 .sticky span {
 	font: italic 12px Georgia, Times, serif;
 	position: relative;
