@@ -8,7 +8,18 @@ body {
 	text-align: center;
 }
 
-form {
+h2{font: italic 28px Georgia, Times, serif;}
+
+.close-x {
+	position: relative;
+	right: 7px;
+	float: right;
+	top: 5px;
+	color: #D6C339;
+	cursor:pointer;
+	text-shadow: 0px -1px 0px #FFFA7C;
+}
+.sticky form {
 	width: 296px;
 	height: 316px;
 	margin: 0px;
@@ -28,7 +39,6 @@ textarea, .insert {
 	border: 0;
 	overflow: hidden;
 	background: transparent;
-	font: bold 28px Helvetica, Arial, Verdana, sans-serif;
 	font: italic 28px Georgia, Times, serif;
 	line-height: 36px;
 	letter-spacing: -1px;
@@ -39,7 +49,7 @@ textarea, .insert {
 }
 
 .stickies {
-	margin: 140px auto 80px;
+	margin: 50px auto 80px;
 	overflow: hidden;
 	width: 910px;
 }
@@ -47,7 +57,6 @@ textarea, .insert {
 	float: left;
 	margin: 0px 5px 5px 0px;
 }
-
 .insert {
 	border: 3px dotted #EAEFF3;
 	width: 244px;
@@ -56,4 +65,42 @@ textarea, .insert {
 	padding: 90px 23px 112px;
 	border-radius: 20px;
 	cursor: pointer;
+	white-space: normal;
+}
+.sticky span {
+	font: italic 12px Georgia, Times, serif;
+	position: relative;
+	bottom: 20px;
+	text-align: right;
+	float: right;
+	margin-right: 10px;
+	color: #D6C339;
+}
+
+#author-info .nice-label {
+	left: 595px;
+	top: 106px;
+	color: #D2D2D2;
+}
+
+#author-info .glowRed {
+	border:1px solid #fafafa;
+	-webkit-box-shadow:0 0 6px #CF2323;
+	-moz-box-shadow:0 0 5px #CF2323;
+	box-shadow:0 0 5px #CF2323;
+}
+
+/* nice styles - FORMS */
+.nice-text {
+	border: solid 1px #EEE;
+	border-radius: 4px;
+	height: 25px;
+	min-width: 230px;
+	position: relative;
+}
+
+.nice-label {
+	font: italic 18px Georgia, Times, serif;
+	position: absolute;
+	z-index: 2;
 }

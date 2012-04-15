@@ -4,8 +4,18 @@
 </head>
 
 <body>
-	  {{> stickies}}
+	<h2>Stickies</h2>
+	<p>An experiment using <a href="http://www.meteor.com/" target="_blank">Meteor</a>. This is just a sketch and not production ready, please be gentle.</p>
+	{{> authorInfo}}
+	{{> stickies}}
 </body>
+
+<template name="authorInfo">
+	<form id="author-info" name="authorname">
+		<label class="nice-label" for="username">Who are you?</label>
+		<input type="text" name="username" class="nice-text" />
+	</form>
+</template>
 
 <template name="stickies">
 	<div class="stickies">
@@ -18,11 +28,15 @@
 <template name="sticky">
 	{{#if isNote this.type }}
 	<div class="sticky">
+		<div class="close-x">x</div>
 		<form id="sticky-{{_id}}" accept-charset="utf-8" name="sticky">
 			<textarea name="note">{{text}}</textarea>
 		</form>
+		<span>from: {{author.name}}</span>
 	</div>
 	{{else}}
-	<div class="insert">Add a note...</div>
+	<div class="insert">
+		<p>Add a note...</p>
+	</div>
 	{{/if}}
 </template>
