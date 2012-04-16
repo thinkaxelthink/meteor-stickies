@@ -7,6 +7,18 @@
 	<p>An experiment using <a href="http://www.meteor.com/" target="_blank">Meteor</a>. This is just a sketch and not production ready, please be gentle. You can say "hi" to me on twitter: <a href="http://www.twitter.com/thinkaxelthink" target="_blank">@thinkaxelthink</a> or checkout the code on <a href="https://github.com/thinkaxelthink/meteor-stickies" target="_blank">github</a></p>
 	{{> authorInfo}}
 	{{> stickies}}
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-30939690-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
 </body>
 
 <template name="authorInfo">
